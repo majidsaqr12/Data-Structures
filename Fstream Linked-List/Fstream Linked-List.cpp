@@ -56,13 +56,6 @@ node* insertnode(node* head, node* newnode)
             cout << "Insert item at middle  \n";
         }
     }
-
-    ofstream outfile;
-    outfile.open("linkedList.txt", ios::out | ios::app);
-
-    outfile << "Data : " << newnode->data << endl ;
-
-    outfile.close();
     return head;
 }
 
